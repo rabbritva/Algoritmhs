@@ -10,10 +10,3 @@ def insertion_sort(l:list):
             l[i+1] = l[i]
             i-=1
         l[i + 1] = x
-
-
-if __name__=="__main__":
-    A = [5,2,4,6,1,3,11,28,17,23,15]
-    print(A, len(A))
-    insertion_sort(A)
-    print(A, len(A))
