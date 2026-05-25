@@ -1,7 +1,8 @@
+import numpy as np
 import sort_algorithms as sa
+from test import time_test as tt
 
 if __name__=="__main__":
-    A = [5,2,4,6,1,3,11,28,17,23,15]
-    print(A, len(A))
-    sa.ins_sort(A, True)
-    print(A, len(A))
+    A = np.random.randint(-10**5,10**5,10**7)
+    # tt(sa.ins_sort, A)
+    tt(sa.merge_sorted, A)
